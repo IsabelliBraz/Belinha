@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+}
+
+#belinha {
+  background: url("../img/girl.webp");
+  background-position: 0 0;
+  width: 64px;
+  height: 128px;
+  position: absolute;
+}
+
+#belinha.bottom {
+  animation: walking-bottom 0.5s steps(1) infinite;
+}
+
+#belinha.left {
+  animation: walking-left 0.5s steps(1) infinite;
+}
+
+#belinha.right {
+  animation: walking-right 0.5s steps(1) infinite;
+}
+
+#belinha.top {
+  animation: walking-top 0.5s steps(1) infinite;
+}
+
+@keyframes walking-bottom {
+  0% {
+    background-position: 0 0px;
+  }
+  33% {
+    background-position: -64px 0px;
+  }
+  66% {
+    background-position: -192px 0px;
+  }
+}
+
+@keyframes walking-right {
+  0% {
+    background-position: 0 -129px;
+  }
+  33% {
+    background-position: -64px -129px;
+  }
+  66% {
+    background-position: -192 -129px;
+  }
+}
+
+@keyframes walking-left {
+  0% {
+    background-position: 0 -396px;
+  }
+  33% {
+    background-position: -64px -396px;
+  }
+  66% {
+    background-position: -192 -396px;
+  }
+}
+
+@keyframes walking-top {
+  0% {
+    background-position: 0 -263px;
+  }
+  33% {
+    background-position: -64px -263px;
+  }
+  66% {
+    background-position: -192 -263px;
+  }
+}
